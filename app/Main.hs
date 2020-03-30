@@ -1,6 +1,8 @@
 {-# LANGUAGE TemplateHaskell #-}
 module A where
 
+import Data.Maybe
+
 a = ()
 $(return [])
 

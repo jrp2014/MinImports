@@ -1,4 +1,5 @@
-* Figure out how to use printMinimalImports / getMinimalImports to replace imports in the AST
+* getMinimalImportorts is helpful, but it does not disard a decl altogether; we might need instances
+    from it.  Instead it just trims to an empty import list
 * Remove App, which isn't used
 * Make some tests
 * Make exports explicit, based on imports in other modules
