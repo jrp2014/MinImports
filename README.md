@@ -8,7 +8,7 @@
 
 A GHC source plugin that replaces current imports with a minimal set, removing unused ones.
 
-It is like [smuggler](//https://github.com/kowainik/smuggler) but it depends on GHC 8.8.3 and newer.
+It is like [smuggler](https://github.com/kowainik/smuggler) but it depends on GHC 8.8.3 and newer.
 
 ## How to use
 
@@ -19,7 +19,7 @@ compiler options (ghc-options):
 -fplugin=MinImportsPlugin
 ```
 
-Lovely addition to this package is that it automatically supports on-the-fly
+This package automatically supports on-the-fly
 feature if you use it with `ghcid`. MinImports doesn't perform file changes when
 there are no unused imports. So you can just run `ghcid` as usual:
 
@@ -44,3 +44,6 @@ cabal build
 ## References
 * [Extending and using GHC as a library](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/extending_ghc.html)
 * [Working with Source Plugins](https://mpickering.github.io/papers/working-with-source-plugins.pdf)
+* [Unused Imports](https://gitlab.haskell.org/ghc/ghc/-/wikis/commentary/compiler/unused-imports)
+* [Relax Unused Imports](https://gitlab.haskell.org/ghc/ghc/-/wikis/commentary/compiler/relaxed-unused-imports)
+* [RnNames](https://hackage.haskell.org/package/ghc-8.6.5/docs/RnNames.html#v:printMinimalImports)

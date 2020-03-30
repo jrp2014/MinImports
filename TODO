@@ -1,0 +1,4 @@
+* Figure out how to use printMinimalImports / getMinimalImports to replace imports in the AST
+* Remove App, which isn't used
+* Make some tests
+* Make exports explicit, based on imports in other modules
