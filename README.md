@@ -8,7 +8,7 @@
 
 A GHC source plugin that replaces current imports with a minimal set, removing unused ones.
 
-It is like [smuggler][//https://github.com/kowainik/smuggler] but it depends on GHC 8.8.3 and newer.
+It is like [smuggler](//https://github.com/kowainik/smuggler) but it depends on GHC 8.8.3 and newer.
 
 ## How to use
 
@@ -42,5 +42,5 @@ cabal build
 ```
 
 ## References
-* https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/extending_ghc.html
-* https://mpickering.github.io/papers/working-with-source-plugins.pdf
+* [Extending and using GHC as a library](https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/extending_ghc.html)
+* [Working with Source Plugins](https://mpickering.github.io/papers/working-with-source-plugins.pdf)
