@@ -73,7 +73,8 @@ typecheckPlugin _ _ tc = do
   uses  <- readMutVar $ tcg_used_gres tc
   usage <- getMinimalImports $ findImportUsage user_imports uses
   liftIO $ putStrLn $ "typeCheckPlugin (tc): minimal imports\n" ++ showSDoc dflags (ppr usage)
-  return tc
+
+  return $ tc { tcg_rn_imports = usage }
 
 metaPlugin :: [CommandLineOption] -> LHsExpr GhcTc -> TcM (LHsExpr GhcTc)
 metaPlugin _ meta = do
